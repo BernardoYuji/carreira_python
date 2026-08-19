@@ -1,0 +1,13 @@
+COMANDOS BÁSICOS!
+
+CREATE TABLE - cria uma nova tabela
+
+INSERT INTO - insere dados na tabela
+
+SELECT - consulta dados
+
+UPDATE - atualiza dados existentes
+
+DELETE - remove dados
+
+JOIN - relaciona dados entre duas tabelas

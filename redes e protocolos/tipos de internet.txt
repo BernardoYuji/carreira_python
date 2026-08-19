@@ -1,0 +1,3 @@
+LAN - apenas para uso pequeno, exemplo predios ou casas (Privado)
+WAN - Abrange uma área maior, mas não como a Internet. Normalmente utilizado em Instituições ou empresas (Privado ou Publico)
+Internet - Abrange o planeta inteiro (Publico)

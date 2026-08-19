@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service ExemploService {
+  rpc ObterDados (Requisicao) returns (Resposta);
+}
+
+message Requisicao {
+  string parametro = 1;
+}
+
+message Resposta {
+  string resultado = 1;
+}

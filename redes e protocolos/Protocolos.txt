@@ -1,0 +1,90 @@
+TCP/IP - Funciona em camadas, que somadas vira o Protocolo completo
+
+Camada 1 (Aplicação) - Inicia a transmissão de dados com protocolos como HTTP e SMTP
+Camada 2 (Transporte) - Gerencia a transmissão de dados usando TCP ou UDP
+Camada 3 (Rede) - Roteia pacotes de dados através da Rede
+Camada 4 (Interface de rede) - A parte física enviando dados como sianis elétricos ou ópticos
+
+
+
+Principais Comando:
+
+ifconfig ou ip addr
+Exibe informações sobre interfaces de rede, endereços IP atribuídos e status da conexão.
+Exemplo
+ip addr show
+
+ping
+Testa a conectividade entre o host local e outro dispositivo, usando o protocolo ICMP.
+Exemplo:
+ping google.com
+
+traceroute
+Mostra o caminho percorrido pelos pacotes até um destino, revelando cada roteador intermediário.
+Exemplo:
+traceroute google.com
+
+netstat ou ss
+Exibe conexões ativas, portas abertas e estatísticas de rede. O ss é mais moderno e recomendado.
+Exemplo:
+ss -tulnp
+
+tcpdump
+Captura pacotes em tempo real, permitindo analisar tráfego detalhado no nível TCP/IP.
+Exemplo (capturando pacotes na porta 80):
+sudo tcpdump -i any port 80
+
+curl
+Realiza requisições HTTP/HTTPS e pode ser usado para inspecionar cabeçalhos e verificar protocolos.
+Exemplo:
+curl -I https://www.example.com
+
+nmap
+Scanner de rede usado para descobrir hosts ativos e verificar portas abertas.
+Exemplo:
+nmap -Pn 192.168.1.1
+
+
+TCP vs UDP
+
+TCP - Estabelece conexão - Entrega ordenada - Detecção e Correção de Erros - Aplicações: Navegadores Web.
+UDP - Não estabelece conexão - Entrega não ordenada - Sem Detecção ou Correção de erros - Aplicação: Jogos online e Streamings.
+
+
+Endereçamento IP
+Sistema que permite identificar dispositivos em uma rede, como computadores, servidores, impressoras ou celulares.
+Funciona como um "endereço residencial", mas na internet ou em redes.
+
+Portas 
+Números que identificam um processo ou serviço específico em um dispositivo.
+Algun números são reservador para serviços, como HTTP (porta 80), SMTP(porta 25) e DNS(porta 53)
+
+Resolução DNS
+Armazena o IP e vincula à um Nome de Domínio 
+Exemplo - DNS Rua/Numero/Complemento e Ip CEP 
+
+Processo de Resolução
+Usuário Digita Nome de Domínio
+Navegador Envia Consulta DNS
+Servidor DNS Consulta Outros Servidores 
+Servidor DNS Encontra Endereço IP
+Servidor DNS Retorna Endereço IP
+Navegador Conecta ao Servidor Web
+
+
+Métodos HTTP
+
+Patch - Modificações parciais
+Get- Método padrão, recuperação de conteúdo
+Delete- Deletar um recurso
+Head- Retornar cabeçalho
+Post- Formulários, criação de recursos
+Put- Substitui um recurso
+Options- Apresenta opções de comunicação
+
+
+Status Code HTTP
+1xx - Informativo
+2xx - Sucesso/Corretos
+3xx -  Redirecionamento
+4xx - Erro do Cliente   
